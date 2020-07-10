@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium_italic';
+    src: url('../fonts/poppins/poppins-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsitalic';
+    src: url('../fonts/poppins/poppins-italic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinslight_italic';
+    src: url('../fonts/poppins/poppins-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold_italic';
+    src: url('../fonts/poppins/poppins-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgb(51, 51, 51);
+  font-family: 'poppinsregular', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+html body p {
+color: #333;
+line-height: 1.5;
+}
+html body a {
+color: #333;
+cursor: pointer;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/*custom radio and check starts*/
+.custom_label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 500;
+  font-style: italic;
+}
+.custom_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+  color: unset;
+    background-color: #d1caca;
+    margin: 0;
+}
+.checkmark.radio {
+  border-radius: 50%;
+}
+.custom_label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0
+}
+.custom_label input:checked ~ .checkmark {
+    background-color: #ff4141;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.custom_label input:checked ~ .checkmark:after {
+    display: block;
+}
+.custom_label .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: white;
+}
+.custom_label .checkmark.radio:after {
+    border-radius: 50%;
+}
+/*custom radio and check ends*/
+
+.login_sec {
+  float: left;
+  width: 100%;
+}
+.social_log, .left_log_form {
+  float: left;
+  width: 100%;
+}
+.left_log_form  .input_catch{
+  border: 1px solid #ff4141;
+}
+.input_catch {
+  width: 100%;
+  box-shadow: unset;
+  border: 1px solid #d7d7d7;
+  padding: 5px 10px;
+  height: 38px;
+  border-radius: 4px;
+}
+.left_log_form .btn_catch {
+  width: 100%;
+  min-width: unset;
+}
+.btn_catch {
+  border-radius: 4px;
+  background: #ff4141;
+  color: #fff;
+  height: 38px;
+  display: inline-block;
+  float: none;
+  min-width: 150px;
+}
+.wrap_logn_outer {
+  float: left;
+  width: 100%;
+  padding: 30px 0px 10px;
+}
+.ln_ht38 {
+  line-height: 38px;
+}
+.social_log span {
+  color: #adadad;
+  font-weight: bold;
+}
+.social_log li {
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.social_log li i {
+  color: #6d6d6d;
+}
+.pos_rel {
+  position: relative;
+}
+.pos_rel i {
+  position: absolute;
+  right: 7px;
+  top: 12px;
+}
+.forget_pswd {
+  font-size: 12px;
+  color: #4d4d4d;
+  font-style: italic;
+  text-decoration: underline;
+}
+.right_logo {
+  text-align: right;
+}
+.right_logo img {
+  display: inline-block;
+  width: 190px;
+  margin-top: 30px;
+}
+.register_sec {
+  float: left;
+  width: 100%;
+  padding: 40px 0px;
+  background-image: url('../img/bm.jpg');
+  background-size: cover;
+  
+}
+.wrap_signup_outer {
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+  padding: 50px 0;
+}
+.info_sign {
+  background: #222;
+  margin: 20px 0 0 60px;
+  padding: 50px 120px 45px 40px;
+  border-radius: 20px;
+  /* color: #fff; */
+}
+.info_sign p {
+  color: #dfdfdf;
+  text-align: justify;
+}
+.form_signup {
+  background: #fff;
+  float: left;
+  width: 100%;
+  padding: 70px 10px 45px;
+  border-radius: 10px;
+  margin-left: -50px;
+}
+.wrap_signup_outer > .col-sm-6 {
+  padding: 0;
+}
+.custom_labe {
+  line-height: 45px;
+}
+.color_title {
+  color: #ff4141;
+  position: relative;
+  margin-bottom: 15px;
+}
+.color_title:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  background: #ff4141;
+  width: 40px;
+  bottom: -4px;
+  height: 3px;
+}
+.info_sign {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+
+/*footer starts*/
+
+/*footer ends*/

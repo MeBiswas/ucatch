@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> YouCatch - Manage Cards </title>
+        <!-- css should be here -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-timepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css" />
+        <link rel="stylesheet" type="text/css" href="css/card.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+        <link href="css/select2.min.css" rel="stylesheet" />
+        <style>
+        	.pro_pik.from_shop.paymnt-type {
+				    padding: 12px 10px;
+				    margin-top: 15px;
+				    box-shadow: 0px 0px 8px #ddd;
+				    border-radius: 4px;
+				    margin-bottom: 20px;
+					}
+					.aval_bal span{
+						font-size: 24px;
+					}
+					.aval_bal i{
+						font-size: 44px;
+						color: #ff4141;
+					}
+					/*.aval_bal .col-sm-3{
+						padding-left: 0px;
+					}*/
+					.walet_bal{
+						border-right: 1px solid #f3f3f3;
+					}
+					.aval_bal p{
+						margin-bottom: 0px;
+					}
+					.aval_bal .add_amt, .aval_bal .add_btn{
+					    margin-top: 13px;
+					    margin-bottom: -10px;
+					}
+		        	.payment_method .catch_tabs {
+					  	float: left;
+					  	width: 100%;
+					}
+					.payment_method ul.cust_tabs {
+						float: left;
+						width: 100%;
+						padding: 1px 0;
+						margin: 0px 0 20px;
+					}
+					.payment_method ul.cust_tabs > li.active > a,
+					.payment_method ul.cust_tabs > li.active > a:hover,
+					.payment_method ul.cust_tabs > li.active > a:focus {
+						color: #fa4141;
+						cursor: default;
+						background-color: transparent;
+						border: 1px solid transparent;
+						border-bottom: 3px solid #fa4141;
+						outline: none;
+						font-size: 16px;
+					}
+					.payment_method ul.cust_tabs > li > a:hover {
+						background-color: transparent;
+						border: 1px solid transparent;
+					}
+					/*cards css starts*/
+					.card-wrapper, .card_form form {
+						float: left;
+						width: 100%;
+						margin: 10px 0;
+					}
+					.card_form {
+						float: left;
+						width: 100%;
+						background: #f8f8f8;
+					}
+					.pymnt-mthd {
+						float: left;
+						width: 100%;
+					}
+					.cmn-crd {
+						border-radius: 6px;
+						box-shadow: 0 0 12px -3px #cccccc;
+						float: left;
+						min-height: 0;
+						padding: 30px 20px;
+						width: 100%;
+						position: relative;
+						margin-bottom: 20px;
+					}
+					.cmn-crd h3 {
+						margin: 0;
+						color: #5a5a5a;
+					}
+					.crd-nm {
+						color: #ff1a00;
+					}
+					.edt .fa.fa-trash {
+						margin-left: 10px;
+					}
+					.cmn-crd > img {
+						margin: 10px 0px;
+						width: 42px;
+						margin-left: 20px;
+						height: unset;
+					}
+					.crd-nub {
+						color: #737373;
+						font-size: 20px;
+						overflow: hidden;
+					}
+					.cmn-crd .crd-mg {
+						float: right;
+						width: 70px;
+					}
+					.crd-vld {
+						float: left;
+						padding-left: 60px;
+						width: 100%;
+					}
+					.crd-vld > span {
+						float: left;
+						font-size: 10px;
+						line-height: 9.5px;
+						text-align: center;
+						width: 30px;
+					}
+					.crd-vld span.vld-dt {
+						float: left;
+						font-size: 14px;
+						line-height: 18.5px;
+						width: 50%;
+					}
+					.cmn-crd .ttl {
+					  float: right;
+					  color: #4b55c6;
+					  font-style: italic;
+					}
+					.cmn-crd .edt {
+					  color: #bfbfbf;
+					  font-size: 18px;
+					}
+					.pymnt-mthd .btn-custom {
+					  margin: 20px 0;
+					}
+					.add-crd > h3 {
+					  border-bottom: 1px solid #cccccc;
+					  color: #05518b;
+					  padding-bottom: 10px;
+					}
+					.bill-det .cards-aded img {
+					  border: medium none;
+					  float: none;
+					  margin: 0;
+					  width: 35px;
+					}
+					.cards-aded img {
+					  border: 1px solid #cccccc;
+					  display: inline-block;
+					  float: right;
+					  margin: 2px 0;
+					  width: 80px;
+					}
+					.ad-txt-crd {
+					  background: #f2f8f8 none repeat scroll 0 0;
+					  float: left;
+					  margin: 20px 0;
+					  padding: 20px 0 10px;
+					  width: 100%;
+					}
+					.ad-txt-crd .btn-custom {
+					  font-size: 14px;
+					  font-weight: lighter;
+					  height: auto;
+					}
+					.ad-txt-crd .custom-select .CaptionCont.SelectBox {
+					  border: 1px solid #cccccc;
+					  border-radius: 4px;
+					  height: 34px;
+					}
+					.ad-txt-crd .form-control {
+					  box-shadow: none;
+					}
+					.ad-txt-crd .form-control:focus {
+					  box-shadow: none;
+					}
+					.add-crd {
+					  float: left;
+					  width: 100%;
+					  display: none;
+					}
+					.card_edit.edit_btn {
+					  font-size: 13px;
+					  float: right;
+					  color: #ff1a00;
+					  font-weight: lighter;
+					  cursor: pointer;
+					}
+
+					/*cards css ends*/
+				
+        </style>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        	<!-- header starts -->
+        	<header class="header_uper">
+        		<div class="transparent header-main">
+			        <nav class="navbar navbar-default custom-header">
+			            <div class="container">
+			                <!-- Brand and toggle get grouped for better mobile display -->
+			                <div class="navbar-header">
+			                    <div class="brand-name">
+			                        <a class="navbar-brand brand-navbar" id="whitelogo"><img src="img/logo.png" class="img-responsive" /></a>
+			                    </div>
+			                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+			                    </button>
+			                </div>
+			                <div class="collapse navbar-collapse">
+			                    <ul class="nav navbar-nav navbar-left singal">
+			                        <li><a href="javascript:;">Products</a></li>
+			                        <li><a href="javascript:;">Services</a></li>
+			                    </ul>
+			                    <ul class="nav navbar-nav navbar-right rgt-nav">
+			                    	<li class="srchhrd comn">
+			                            <a href="javascript:void(0);" class="" >
+			                            	<input type="text" class="form-control hedr_srch" placeholder="Search Here . . .">
+			                            	<!-- <i class="fa fa-search"></i> -->
+			                            </a>
+			                        </li>
+			                        <li class="left comn">
+			                            <a href="javascript:void(0);" class="trans-btn " ><i class="fa fa-bell"></i> </a>
+			                        </li>
+			                        <li class="right comn">
+			                            <a href="javascript:void(0);" class="trans-btn">
+			                            	<img src="img/user.jpg" class="img-responsive" />
+			                            	John Spiegal
+			                            </a>
+			                        </li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+				    </div>
+				    <div class="niche_header header-main">
+				        <nav class="navbar navbar-default custom-header">
+				            <div class="container">
+				                <!-- Brand and toggle get grouped for better mobile display -->
+				                <div class="navbar-header">
+				                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+					                    <span class="sr-only">Toggle navigation</span>
+					                    <span class="icon-bar"></span>
+					                    <span class="icon-bar"></span>
+					                    <span class="icon-bar"></span>
+				                    </button>
+				                </div>
+				                <div class="collapse navbar-collapse text-center ">
+				                    <ul class="nav navbar-nav singal">
+				                        <li class="active"><a href="javascript:;">Social</a></li>
+				                        <li><a href="javascript:;">Market Place</a></li>
+				                        <li><a href="javascript:;">Demand Services</a></li>
+				                        <li><a href="javascript:;">FAQ</a></li>
+				                        <li><a href="javascript:;">Help</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </nav>
+				    </div>
+					</header>
+        	<!-- header ends -->
+
+            <div class="home_page_wrapper">
+            	<!-- div cover -->
+            	<div class="profile_cover" style="background-image:url('img/bm.jpg')">
+            		<div class="wrap_abs">
+                        <div class="col-md-2 col-md-offset-1 col-xs-12">
+                            <div class="img_prof">
+                                <img src="img/user.jpg" class="img-responsive" id="upldd-img" />
+                            </div>
+                        </div>
+                        3<div class="col-md-8 col-xs-12">
+                            <div class="usr_top_dtls">
+                                <div class="col-sm-7">
+                                    <h4 class="name">John Spiegal</h4>
+                                    <p class="adrs">21, paris, France</p>
+                                </div>
+                                <div class="prof_btn col-sm-5">
+	                                <ul>
+	                                    <li class=""><i class="fa fa-thumbs-up"></i> 20 Likes</li>
+	                                    <li class=""><i class="fa fa-commenting"></i> 469 Views</li>
+	                                    <li class=""><i class="fa fa-feed"></i> My Posts</li>
+	                                </ul>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+            	</div>
+            	<!-- div cover -->
+            	<!-- section post start -->
+								<section class="social_page user_db_catch">
+									<div class="container">
+										<div class="row pos_rel">
+											<div class="col-sm-3 pos_sticky">
+												<div class="card widget_one">
+													<ul class="social_side_opt">
+														<li><a href="personal-info.html"> Personal Info </a></li>
+														<li><a href="my-profile.html"> Profile Photos </a></li>
+														<li><a href="email-setting.html"> Email Setting </a></li>
+														<li class="has_sub_menu"><a href="javascript:;"> Create/Manage E-shop <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+															<ul class="am_sub_menu" type="none">
+																<li>
+																	<a href="dashboard-create-eshop.html"> Create your E-shop</a>
+																</li>
+																<li>
+																	<a href="dashboard-upload-products.html"> Add Products</a>
+																</li>
+																<li>
+																	<a href="dashboard-uploaded-products.html"> Uploaded Products</a>
+																</li>
+															</ul>
+														</li>
+														<li class="has_sub_menu"><a href="javascript:;"> My Services <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+															<ul class="am_sub_menu" type="none">
+																<li class="active">
+																	<a href="dashboard-upload-services.html"> Upload Service</a>
+																</li>
+																<li>
+																	<a href="dashboard-manage-services-account.html"> Manage Service Profile</a>
+																</li>
+																<li>
+																	<a href="dashboard-services-status.html"> Services Status </a>
+																</li>
+																<li>
+																	<a href="dashboard-recieved-service-request.html"> Received Service Requests</a>
+																</li>
+															</ul>
+														</li>
+														<li class="active"><a href="dashboard-wallet.html"> Manage Cards </a></li>
+														<li><a href="dashboard-notifications.html"> Notifications </a></li>
+														<li><a href="change-password.html"> Change Password </a></li>
+														<li><a href="index.html"> Log Out </a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="col-sm-9 mid_sec">
+												<div class="logged_db manage_add_services">
+													<div class="single_post">
+														<h3 class="logged_sec_head"> Add Money </h3>
+														<div class="col-sm-12">
+															<div class="comon_wrap_logged wrap_add_services">
+																<div class="pro_pik from_shop paymnt-type">
+
+																	<!-- available balance -->
+																	<div class="aval_bal">
+																		<div class="col-sm-1">
+																			<i class="fa fa-credit-card-alt"></i> 
+																		</div>
+																		<div class="col-sm-3">
+																			<div class="walet_bal">
+																				<span> $ 100 </span>
+																				<p>Your Wallet Balance</p>
+																			</div>
+																		</div>
+																		<div class="col-sm-5">
+																			<div class="add_amt">
+																				<form>
+																					<div class="form-group">
+												            				<input type="text" name="" class="input_catch" placeholder="Enter Amount to be Added in Wallet">
+												            			</div>
+												            		</form>
+												            	</div>
+																		</div>
+																		<div class="col-sm-3">
+																			<div class="add_btn">
+																				<div class="form-group text-right">
+												            			<button class="btn btn_catch" type="button">Add Money to Wallet</button>
+											            			</div>
+											            		</div>
+																		</div>
+																	</div>
+																	<!-- available balance -->
+																</div>
+															</div>
+														</div>
+
+														<!-- card section -->
+															<div class="payment_method">
+																<h3 class="logged_sec_head"> Please Select a Payment Method </h3>
+
+																<!-- tabs -->
+																	<div class="catch_tabs">
+																		<ul class="nav nav-tabs cust_tabs">
+																			<li class="active"><a data-toggle="tab" href="#prod-desc">Saved Details </a></li>
+																			<li><a data-toggle="tab" href="#rat-rev">Add New Card</a></li>
+																		</ul>
+																		<div class="col-sm-12">
+																			<div class="tab-content">
+																				<div id="prod-desc" class="tab-pane fade in active">
+																					<!--cards saved-->
+																					<div class="saved_card">
+																						<div class="col-sm-6 col-xs-12">
+																							<div class="vis-crd cmn-crd">
+																								<h3><span class="text-left edt"><i class="fa fa-trash"></i></span> <span class="text-right ttl">Visa</span> </h3>
+																								<img src="img/chip.png" class="img-responsive" alt="img chip">
+																								<p class="crd-nub">XXXX XXXX XXXX 6633</p>
+																								<div class="row">
+																									<div class="col-xs-7"><h4 class="crd-nm">G. Ronalds</h4></div>
+																									<div class="col-xs-5"><span class="crd-vld text-right"><span>VALID THRU</span><span class="vld-dt">12/20</span></span></div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+
+																					<div class="saved_card">
+																						<div class="col-sm-6 col-xs-12">
+																							<div class="vis-crd cmn-crd">
+																								<h3><span class="text-left edt"><i class="fa fa-trash"></i></span> <span class="text-right ttl">Visa</span> </h3>
+																								<img src="img/chip.png" class="img-responsive" alt="img chip">
+																								<p class="crd-nub">XXXX XXXX XXXX 6633</p>
+																								<div class="row">
+																									<div class="col-xs-7"><h4 class="crd-nm">G. Ronalds</h4></div>
+																									<div class="col-xs-5"><span class="crd-vld text-right"><span>VALID THRU</span><span class="vld-dt">12/20</span></span></div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																					<!--cards saved-->
+																				</div>
+																				<div id="rat-rev" class="tab-pane fade">
+																					<!--add new card-->
+																					<div class="c_d_pay">
+																						<div class="card-container">
+																			        <div class="card-wrapper"></div>
+																			        <div class="form-container active">
+																			        	<div class="row">
+																				            <form action="">
+																				            	<div class="col-sm-6">
+																					            	<div class="form-group">
+																					                	<input placeholder="Card number" type="tel" name="number">
+																					                </div>
+																					            </div>
+																					            <div class="col-sm-6">
+																					            	<div class="form-group">
+																				                		<input placeholder="Full name" type="text" name="name">
+																				                	</div>
+																				                </div>
+																				                <div class="col-sm-6">
+																					            	<div class="form-group">
+																				                		<input placeholder="MM/YY" type="tel" name="expiry">
+																				                	</div>
+																				                </div>
+																				                <div class="col-sm-6">
+																					            	<div class="form-group">
+																				                		<input placeholder="CVC" type="number" name="cvc">
+																				                	</div>
+																				                </div>
+																				                <div class="col-sm-6">
+																					            	<div class="form-group">
+																				                		<button type="button" class="btn btn_catch"> Pay <i class="fa fa-inr"></i> 638 </button>
+																				                	</div>
+																				                </div>
+																				            </form>
+																				        </div>
+																			        </div>
+																				    </div>
+																			    </div>
+																					<!--add new card-->
+																				</div>
+																			</div>															
+																		</div>		
+																	</div>
+																<!-- tabs -->
+															</div>
+														<!-- card section -->
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- section post start -->	
+								
+								<!-- section footer db start -->	
+								<section class="db_footer_sec">
+									<div class="container">
+										<div class="row">
+											<div class="col-sm-6">
+												<ul class="copy_rt" type="none">
+													<li><img src="img/u.png" class="img-responsive"></li>
+													<li> &copy Copyright 2018 by YouCatch. All Rights Reserved.</li>
+												</ul>
+											</div>
+											<div class="col-sm-6">
+												<ul class="ftr_links" type="none">
+													<li><a href="about.html">About Us</a></li>
+													<li><a href="contact.html">Contact Us</a></li>
+													<li><a href="privacy.html">Privacy Policy</a></li>
+													<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- section footer db ends -->	
+
+            </div>
+        </div>
+        <!-- <a class="scrollTop" href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+        <!-- js should be here -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+        <script type="text/javascript"  src="js/aos.js"></script>
+
+        <script type="text/javascript"  src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript"  src="js/bootstrap-timepicker.js"></script>
+        <script type="text/javascript" src="js/jquery.tagsinput.js"></script>
+        <script type="text/javascript" src="js/select2.min.js"></script>
+        <script type="text/javascript" src="js/card.js"></script>
+
+        <!-- <script type="text/javascript">
+	      	$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 100) {
+			       $('.header_uper').addClass('fixed-header');
+			    }
+			    else {
+			       $('.header_uper').removeClass('fixed-header');
+			    }
+			});
+	    </script> -->
+
+		<script type="text/javascript">
+			$('.am_sub_menu').slideUp();
+			$('.has_sub_menu').click(function(){
+				$(this).find('.am_sub_menu').slideToggle();
+			});
+		</script>
+		
+	    <script type="text/javascript">
+			$('#tags_2').tagsInput();
+		</script>
+
+		<script>
+			$('.dt_pckr').datepicker();
+			$('.tm_pckr').timepicker();
+		</script>
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip();
+			});
+
+			AOS.init();
+		</script>
+		<script>
+			$(document).ready(function() {
+			    $('.js-example-basic-multiple').select2();
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.c_d_pay').show();
+				$('.switch').find('.cre_deb').click(function(){
+					$('.c_d_pay').slideToggle();
+				});
+			});
+		</script>
+		<script>
+      new Card({
+          form: document.querySelector('form'),
+          container: '.card-wrapper'
+      });
+    </script>
+		
+    </body>
+</html>
+

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> YouCatch - Social Friends </title>
+        <!-- css should be here -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/slim-scroll.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+        <style>
+            .niche_header.header-main .navbar-default{
+                background-color: #ff4141;
+            }
+            .navbar-default.custom-header .navbar-nav > li > a,
+            .navbar-nav.rgt-nav > li > a.trans-btn:hover{
+                padding: 15px 20px;
+            }
+            .social-header .navbar-default.custom-header .navbar-nav > li > a{
+                padding: 5px 15px;
+                color: #fff;
+            }
+            .niche_header .singal{
+                text-align: left;
+            }
+            .niche_header .col-sm-6,
+            .niche_header .col-sm-10,
+            .niche_header .navbar-collapse{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .niche_header .col-sm-7,
+            .niche_header .navbar-collapse{
+                padding-right: 0px;
+            }
+            .navbar-nav.ryt-link{
+                float: right;
+            }
+            .social-header .ryt-link li a img{
+                height: 24px;
+                width: 24px;
+                object-fit: cover;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+        	<!-- header starts -->
+        	<header class="header_uper">
+                <div class="transparent header-main">
+                    <nav class="navbar navbar-default custom-header">
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <div class="brand-name">
+                                    <a class="navbar-brand brand-navbar" id="whitelogo"><img src="img/logo.png" class="img-responsive" /></a>
+                                </div>
+                                <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-left singal">
+                                    <li class="active"><a href="javascript:;">Social</a></li>
+                                    <li><a href="javascript:;">Market Place</a></li>
+                                    <li><a href="javascript:;">Demand Services</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right rgt-nav">
+                                    <li class="srchhrd comn">
+                                        <a href="javascript:void(0);" class="" >
+                                            <input type="text" class="form-control hedr_srch" placeholder="Search Here . . .">
+                                            <!-- <i class="fa fa-search"></i> -->
+                                        </a>
+                                    </li>
+                                    <li class="left comn">
+                                        <a href="javascript:void(0);" class="trans-btn " ><i class="fa fa-bell"></i> </a>
+                                    </li>
+                                    <li class="right comn">
+                                        <a href="javascript:void(0);" class="trans-btn">
+                                            <img src="img/user.jpg" class="img-responsive" />
+                                            John Spiegal
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="niche_header header-main social-header">
+                    <nav class="navbar navbar-default custom-header">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse">
+                                <div class="col-sm-5 text-left">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                           
+                                <div class="col-sm-7 text-right">
+                                    <ul class="nav navbar-nav ryt-link">
+                                        <li><a href="javascript:;">Home</a></li>
+                                        <li><a href="javascript:;"><i class="fa fa-user-md"></i></a></li><li><a href="javascript:;"><i class="fa fa-comment"></i></a></li><li><a href="javascript:;"><i class="fa fa-globe"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+			<!-- section post start -->
+			<section class="social_page">
+				<div class="container">
+					<div class="row pos_rel">
+						<div class="col-sm-3 ">
+							<div class="card widget_one">
+								<h4 class="anc_dash text-center"><a href="social-timeline.html"> <i class="fa fa-home"></i> Go to Homepage</a></h4>
+							</div>
+							<div class="card widget_two">
+								<div class="srch_bar_chat">
+									<div class="form-group pos_rel">
+										<input type="text" name="" class="form-control input_catch" placeholder="Search Keyword . . ." />
+										<i class="fa fa-search"></i>
+									</div>
+								</div>
+								<ul class="inbox_usrs">
+									<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/neymar.jpg">
+                                                    <i class="fa fa-circle online"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Akshay Thakur </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">Active Now</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li class="active">
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/jeni.jpg">
+                                                    <i class="fa fa-circle offlive"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Jenifer Lawercre </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">4 min ago</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/last.jpg">
+                                                    <i class="fa fa-circle online"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> John Michel </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">Active Now</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/user.jpg">
+                                                    <i class="fa fa-circle online"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Fred James </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">Active Now</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/neymar.jpg">
+                                                    <i class="fa fa-circle offlive"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Akshay Thakur </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">4 min Ago</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/jeni.jpg">
+                                                    <i class="fa fa-circle offlive"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Jenifer Lawercre </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">4 min ago</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/last.jpg">
+                                                    <i class="fa fa-circle online"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> John Michel </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">Active Now</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/user.jpg">
+                                                    <i class="fa fa-circle online"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Fred James </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">Active Now</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/neymar.jpg">
+                                                    <i class="fa fa-circle offlive"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Akshay Thakur </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">4 min Ago</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+                                   	<li>
+                                        <div class="messge_list">
+                                            <div class="noti_mini">
+                                                <div class="noti_img pos_rel">
+                                                    <img class="img-responsive" src="img/jeni.jpg">
+                                                    <i class="fa fa-circle offlive"></i>
+                                                </div>
+                                                <div class="noti_desc">
+                                                    <h5><a href="other_user_profile.html"> Jenifer Lawercre </a>
+                                                        <span class="pull-right messge_time">
+                                                            <div class="dropdown">
+                                                                <a aria-expanded="false" class="public-btn dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="javascript:void(0)" class="edit-post"><span class="fa fa-trash fa-fw"></span> Delete Chat</a></li>
+                                                                    <li><a href="javascript:void(0)"><span class="fa fa-thumb-tack fa-fw"></span> Mark as Unread</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </span>
+                                                    </h5>
+                                                    <p>How are you ?</p>
+                                                    <span class="tme_span">4 min ago</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                   	</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-9 mid_sec">
+							<div class="wrap_inner_comon social_main">
+								<div class="col-sm-12">
+									<div class="new_post">
+										
+									</div>
+									<div class="single_post" data-aos="zoom-in">
+										<h3 class="logged_sec_head"><i class="fa fa-comments"></i> Inbox </h3>
+
+										<div class="col-sm-12">
+											<div class="comon_wrap_logged wrap_social_frnds">
+												<div class="col-sm-12">
+
+													<div class="pro_pik wrap_frnds">
+														<div class="tab-content chat_scrol">
+		                                                    <!-- inbox chat -->
+		                                                    <div class="col-sm-12">
+		                                                        <div class="row">
+		                                                        	<div class="chat_body">
+			                                                        	<div class="chat_head">
+																			<div class="chatter_dtls">
+																				<div class="chatter_img">
+																					<img src="img/jeni.jpg" alt="" class="img-responsive">
+																				</div>
+																				<div class="chatter_info">
+																					<h3>Janifer Lawrence</h3>
+																					<p>Online</p>
+																				</div><!--usr-mg-info end-->
+																			</div>
+																			<a href="javascript:;" title=""><i class="fa fa-ellipsis-v"></i></a>
+																		</div>
+			                                                            <div class="scrol_cls">
+																			<div class="main_msg_single">
+																				<div class="msg_usr_img">
+																					<img src="img/jeni.jpg" alt="" class="img-responsive img-circle">
+																				</div><!--msg_usr_img end-->
+																				<div class="msg_dtl">
+																					<div class="msg_inr_dtl img_box">
+																						<img src="img/22.jpg" alt="" class="img-responsive img-fluid">
+																						<img src="img/vidcover.jpg" alt="" class="img-responsive img-fluid">
+																						<img src="img/gal.jpg" alt="" class="img-responsive img-fluid">
+																					</div><!--msg_inr_dtl end-->
+																					<span>Sat, Aug 23, 1:08 PM</span>
+																				</div><!--msg_dtl end-->
+																			</div><!--main_msg_single end-->
+																			<div class="main_msg_single text_right">
+																				<div class="msg_dtl">
+																					<div class="msg_inr_dtl">
+																						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.</p>
+																					</div><!--msg_inr_dtl end-->
+																					<span>Sat, Aug 23, 1:08 PM</span>
+																				</div><!--msg_dtl end-->
+																				<div class="msg_usr_img">
+																					<img src="img/neymar.jpg" alt="" class="img-responsive img-circle">
+																				</div><!--msg_usr_img end-->
+																			</div><!--main_msg_single end-->
+																			<div class="main_msg_single st3">
+																				<div class="msg_dtl st3">
+																					<div class="msg_inr_dtl">
+																						<p>Lorem ipsum dolor sit amet</p>
+																					</div><!--msg_inr_dtl end-->
+																					<span>2 minutes ago</span>
+																				</div><!--msg_dtl end-->
+																				<div class="msg_usr_img">
+																					<img src="img/jeni.jpg" alt="" class="img-responsive img-circle">
+																				</div><!--msg_usr_img end-->
+																			</div><!--main_msg_single end-->
+																			<div class="main_msg_single st3">
+																				<div class="msg_dtl st3">
+																					<div class="msg_inr_dtl">
+																						<p>....</p>
+																					</div><!--msg_inr_dtl end-->
+																					<span>Typing...</span>
+																				</div><!--msg_dtl end-->
+																				<div class="msg_usr_img">
+																					<img src="img/jeni.jpg" alt="" class="img-responsive img-circle">
+																				</div><!--msg_usr_img end-->
+																			</div><!--main_msg_single end-->
+                                                                           
+																		</div>
+																		<div class="type_msg">
+																			<form>
+    																			<div class="type_field">
+																					<input class="input_catch form-control" placeholder="Type a message here" type="text">
+																					<button type="submit" class="btn btn_catch">Send</button>
+                                                                                </div>
+                                                                                <div class="post-cmntss">
+                                                                                    <div class="post_btns col-sm-12">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Send Photo"><span><i class="fa fa-camera fa-fw"></i></span>
+                                                                                                    <input class="gallery-photo-add" name="" multiple="" type="file">
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Send Video"><span><i class="fa fa-video-camera fa-fw"></i></span>
+                                                                                                    <input class="gallery-photo-add" name="" type="file">
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+																			</form>
+																		</div>
+																	</div>
+
+		                                                        </div>
+		                                                    </div>                                      
+		                                                    <!-- inbox chat -->
+		                                                </div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section post start -->
+
+			<!-- section footer db start -->	
+			<section class="db_footer_sec">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<ul class="copy_rt" type="none">
+								<li><img src="img/u.png" class="img-responsive"></li>
+								<li> &copy Copyright 2018 by YouCatch. All Rights Reserved.</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<ul class="ftr_links" type="none">
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="privacy.html">Privacy Policy</a></li>
+								<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section footer db ends -->	
+			
+        	<!-- header ends -->
+            <div class="home_page_wrapper">
+            	
+            </div>
+
+        </div>
+        <!-- <a class="scrollTop" href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+        <!-- js should be here -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+        <script type="text/javascript"  src="js/jquery.slimscroll.js"></script>
+        <script type="text/javascript"  src="js/aos.js"></script>
+        <!-- <script type="text/javascript">
+	      	$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 100) {
+			       $('.header_uper').addClass('fixed-header');
+			    }
+			    else {
+			       $('.header_uper').removeClass('fixed-header');
+			    }
+			});
+	    </script> -->
+        <script type="text/javascript">
+            $('div.gallery').hide();
+            $(function() {
+            // Multiple images preview in browser
+            var imagesPreview = function(input, placeToInsertImagePreview) {
+
+                if (input.files) {
+                    var filesAmount = input.files.length;
+
+                    for (i = 0; i < filesAmount; i++) {
+                        var reader = new FileReader();
+
+                        reader.onload = function(event) {
+                            $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                        }
+
+                        reader.readAsDataURL(input.files[i]);
+                    }
+                }
+
+            };
+
+            $('.gallery-photo-add').on('change', function() {
+                imagesPreview(this, 'div.gallery');
+                $('div.gallery').show();
+            });
+        });
+        </script>
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip();
+			});
+
+			AOS.init();
+		</script>
+		<script>
+			$(function(){
+				$('.scrol_cls').slimScroll({
+					height: '450px'
+				});
+			});
+			$(function(){
+				$('.inbox_usrs').slimScroll({
+					height: '400px'
+				});
+			});
+		</script>
+    </body>
+</html>
+

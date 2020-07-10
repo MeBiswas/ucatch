@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> YouCatch - E-Shop </title>
+        <!-- css should be here -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+         <link rel="stylesheet" type="text/css" href="css/plyr.css">
+         <style>
+            .niche_header.header-main .navbar-default{
+                background-color: #ff4141;
+                border: unset;
+                border-radius: 0px;
+            }
+            .navbar-default.custom-header .navbar-nav > li > a,
+            .navbar-nav.rgt-nav > li > a.trans-btn:hover{
+                padding: 15px 20px;
+            }
+            .social-header .navbar-default.custom-header .navbar-nav > li > a{
+                padding: 5px 15px;
+                color: #fff;
+            }
+            .niche_header .singal{
+                text-align: left;
+            }
+            .niche_header .col-sm-6,
+            .niche_header .col-sm-10,
+            .niche_header .navbar-collapse{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .niche_header .col-sm-7,
+            .niche_header .navbar-collapse{
+                padding-right: 0px;
+            }
+            .navbar-nav.ryt-link{
+                float: right;
+            }
+            .social-header .ryt-link li a img{
+                height: 24px;
+                width: 24px;
+                object-fit: cover;
+            }
+            .shop_pos{
+        	    position: absolute;
+    			bottom: 75px;
+    			width: 100%;
+    			float: left;
+    			left: 0px;
+    			right: 0px;
+            }
+            .shop-ratings i{
+                color: #ff9e41;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+            .shop_pos h2{
+            	color: #fff;
+            }
+            .pro_headng h3{
+            	margin: 0px 0px 30px 0px;
+            	font-weight: bold;
+            }
+            .frnd_eshop_detail .profile_cover{
+            	height: 200px;
+            }
+            .select_catch{
+                padding-left: 5px;
+            }
+            .marketplace_wrap .eshop_prod{
+                -webkit-box-shadow: 0px 0px 34px -16px #404040;
+            }
+            .marketplace_wrap .eshop_prod:hover{
+                -webkit-box-shadow: 0px 0px 40px -16px #404040;
+            }
+            .pull-left.search_br {
+                /*width: 40%;*/
+                /*padding-left: 10px;*/
+            }
+            .search_br{
+                text-align: left;
+                width: 40%;
+                float: left;
+                padding-left: 15px;
+            }
+            .soc_icons{
+                text-align: right;
+                width: 60%;
+                float: left;
+            }
+            .pull-right.soc_icons {
+                /*width: 60%;*/
+                /*padding-right: 16px;*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        	<!-- header starts -->
+        	<header class="header_uper">
+                <div class="transparent header-main">
+                    <nav class="navbar navbar-default custom-header">
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <div class="brand-name">
+                                    <a class="navbar-brand brand-navbar" id="whitelogo"><img src="img/logo.png" class="img-responsive" /></a>
+                                </div>
+                                <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()" data-toggle="collapse" data-target="#upper-header" aria-controls="upper-header" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="upper-header">
+                                <ul class="nav navbar-nav navbar-left singal">
+                                    <li class="active"><a href="javascript:;">Social</a></li>
+                                    <li><a href="javascript:;">Market Place</a></li>
+                                    <li><a href="javascript:;">Demand Services</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right rgt-nav">
+                                    <li class="srchhrd comn">
+                                        <a href="javascript:void(0);" class="" >
+                                            <input type="text" class="form-control hedr_srch" placeholder="Search Here . . .">
+                                            <!-- <i class="fa fa-search"></i> -->
+                                        </a>
+                                    </li>
+                                    <li class="left_comn">
+                                        <a href="javascript:void(0);" class="trans-btn " ><i class="fa fa-bell"></i> </a>
+                                    </li>
+                                    <li class="right_comn">
+                                        <a href="javascript:void(0);" class="trans-btn">
+                                            <img src="img/user.jpg" class="img-responsive" />
+                                            John Spiegal
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="niche_header header-main social-header">
+                    <nav class="navbar navbar-default custom-header">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()" data-toggle="collapse" data-target="#lower-header1" aria-controls="lower-header1" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="lower-header1">
+                                <div class="search_br">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                           
+                                <div class="soc_icons">
+                                    <ul class="nav navbar-nav ryt-link list-inline">
+                                        <li><a href="javascript:;">Home</a></li>
+                                        <li><a href="javascript:;"><i class="fa fa-user-md"></i></a></li><li><a href="javascript:;"><i class="fa fa-comment"></i></a></li><li><a href="javascript:;"><i class="fa fa-globe"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        	<!-- header ends -->
+
+            <div class="home_page_wrapper frnd_eshop_detail">
+                <div class="home_page_wrapper">
+                    <section class="social_page product_marketplace">
+                        <div class="container">
+                            <div class="pos_rel">
+                                <div class="col-sm-9 mid_sec">
+                                    <div class="wrap_inner_comon marketplace_wrap"> 
+                                        <div class="sorrt_div">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <div class="select_catch pos_rel">
+                                                        <select class="form-control">
+                                                            <option>Sort By</option>
+                                                            <option value="f">New - Old</option>
+                                                            <option value="f">Old - New</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                    
+                                        <div class="wrap_product_inner">
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4 col-lg-4">
+                                                <a class="eshop_prod">
+                                                    <div class="eshop_pro_img prod_1">
+                                                        <img src="img/st2.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="desc_shop">
+                                                        <div class="img_pro_shop">
+                                                            <img src="img/vidcover.jpg" class="img-responsive">
+                                                        </div>
+                                                        <div class="name_shope">
+                                                            <h3 class="soc_shop_nam">Mystery Stone</h3>
+                                                            <p class="soc_shop_loc"><i class="fa fa-map-marker"></i> Italy </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cust_pagintn">
+                                            <ul class="pagination">
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <aside class="social_advt">
+                                        <div class="single_post filt_single_post">
+                                            <form class="" method="" action="">
+                                                <div class="narow_serch">
+                                                    <h2>Filter Your Search:</h2>
+                                                </div>
+                                                <fieldset>
+                                                    <div class="single_filt">
+                                                        <h4 class="click_here"><i class="fa fa-hps"></i> By Country </h4>
+                                                        <div class="click_drop">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control input_catch" placeholder="Enter Location">
+
+                                                                <button class="btn btn_inpt"><i class="fa fa-crosshairs"></i></button>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="p-b-10">  0 km <span class="pull-right"> 50 km </span>  </div>
+                                                                <input id="ex1" type="text" class="span2" value="" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="8"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single_filt">
+                                                        <h4 class="click_here"><i class="fa fa-hps"></i> By Products </h4>
+                                                        <div class="click_drop">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control input_catch dat_fltr" placeholder="Product Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single_filt">
+                                                        <h4 class="click_here"><i class="fa fa-hps"></i> By Category </h4>
+                                                        <div class="click_drop">
+                                                            <div class="form-group">
+                                                                <div class="select_catch pos_rel">
+                                                                    <select class="form-control">
+                                                                        <option>Choose Category</option>
+                                                                        <option value="f">Electronics</option>
+                                                                        <option value="f">Mobiles</option>
+                                                                        <option value="f">Furniture</option>
+                                                                        <option value="f">Footwear</option>
+                                                                        <option value="f">Clothing</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single_filt">
+                                                        <h4 class="click_here"><i class="fa fa-hps"></i> By Shop Name </h4>
+                                                        <div class="click_drop">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control input_catch dat_fltr" placeholder="Enter Shop Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="click_drop apply_filter">
+                                                        <div class="form-group text-center">
+                                                            <button type="button" class="btn btn_catch"> Apply Filters</button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="filters_side">
+                                            
+                                        </div>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- section post start -->
+                </div>
+            	
+				<!-- section footer db start -->	
+				<section class="db_footer_sec">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<ul class="copy_rt" type="none">
+									<li><img src="img/u.png" class="img-responsive"></li>
+									<li> &copy Copyright 2018 by YouCatch. All Rights Reserved.</li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul class="ftr_links" type="none">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy Policy</a></li>
+									<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section footer db ends -->	
+				
+            </div>
+        </div>
+        <!-- <a class="scrollTop" href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+        <!-- js should be here -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript"  src="js/plyr.js"></script>
+        <script type="text/javascript"  src="js/bootstrap-slider.js"></script>
+        <!-- <script type="text/javascript">
+	      	$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 100) {
+			       $('.header_uper').addClass('fixed-header');
+			    }
+			    else {
+			       $('.header_uper').removeClass('fixed-header');
+			    }
+			});
+	    </script> -->
+
+
+	    <!-- <script>
+	        $(document).ready(function() {
+			  $("a.fancybox").fancybox({
+			  	thumbs : {
+					autoStart : true
+				}
+			  })
+			});
+		</script> -->
+	    <script type="text/javascript">
+	    	$('.dob_dash').datepicker({
+	    		"setDate": new Date(),
+	    		// "autoclose": true
+	    	});
+	    </script>
+	    <script type="text/javascript">
+	    	$('.edit_side').hide();
+	    	$(document).ready(function(){
+	    		$('.edit_info_btn').click(function(){
+	    			$(this).closest('.single_post').find('.view_side').slideUp();
+	    			$(this).closest('.single_post').find('.edit_side').fadeIn();
+	    		});
+	    		$('.save_chng').click(function(){
+	    			$(this).closest('.single_post').find('.edit_side').slideUp();
+	    			$(this).closest('.single_post').find('.view_side').fadeIn();
+	    		});
+	    	});
+	    </script>
+		<script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            $("#ex1").slider({});
+            $("#ex2").slider({});
+
+            AOS.init();
+        </script>
+		<!-- video plyr -->
+		<script>
+			const player = new Plyr('#player');
+			const player1 = new Plyr('#player1');
+			const player2 = new Plyr('#player2');
+			const player3 = new Plyr('#player3');
+		</script>
+		<!-- video plyr -->
+
+		<script>
+			$('[data-fancybox]').fancybox({
+			    youtube : {
+			        controls : 0,
+			        showinfo : 0
+			    },
+			    vimeo : {
+			        color : 'f00'
+			    }
+			});
+		</script>
+
+    </body>
+</html>
+

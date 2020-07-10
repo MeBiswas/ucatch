@@ -1,0 +1,167 @@
+@media only screen and (max-width: 1080px) {
+	.comn_form_home .comn_title_h2 {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.slider_sec {
+		height: unset;
+	}
+	.single_offer {
+		margin-bottom: 20px;
+	}
+	.content4 h3 {
+		font: 900 40px/55px Raleway,sans-serif;
+	}
+	.app_links {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.app_links img {
+		display: inline-block;
+	}
+	.app_links figure {
+		float: none;
+		display: inline-block;
+		margin-top: 20px;
+	}
+	.wrap_enquiry_form::after {
+		top: 5%;
+		left: 5%;
+		width: 90%;
+		height: 90%;
+	}
+	.form-control.text_fitness {
+		border-radius: 8px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 768px) {
+	.owl-nav span {
+		font-size: 80px;
+	}
+	button.btn_fit {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.img_how_text {
+		margin-bottom: 80px;
+	}
+	.img_how_text.last_ch {
+		margin-bottom: 0px;
+	}
+	.arow_img {
+		top: unset;
+		width: 8%;
+		right: 47%;
+		bottom: -51px;
+		transform: rotate(90deg);
+	}
+	.arow_img.two {
+		top: unset;
+		right: 44%;
+	}
+	.newsletter_enquiry_sec {
+		background: url('../img/enq.jpg') -288px -310px no-repeat;
+		height: unset;
+	}
+	.comn_form_home {
+		width: 100%;
+	}
+	.enquiry_form {
+		padding: 0 40px;
+	}
+	.navbar-brand {
+		width: 220px;
+		padding: 5px 0 0 20px;
+	}
+	.navbar-toggle {
+		padding: 14px 10px;
+		margin-top: 0;
+		margin-bottom: 0;
+		background-color: #e51837;
+		border-radius: 100%;
+	}
+	.navbar-toggle .icon-bar {
+		background: #fff;
+	}
+	.mainEra_service_pro, .mainEra_user_dashboard {
+		margin-top: 40px;
+	}
+	.title_dashbord_wrap {
+		padding: 0 10px;
+	}
+	.common_inner_dashbord_user, .common_inner_sevice_provider {
+		padding: 10px 10px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.owl-item .item .content_era {
+		top: 20%;
+		left: 10%;
+		width: 80%;
+	}
+	.content_era h1 {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.owl-nav span {
+		font-size:40px;
+		line-height: 0.8;
+		margin: 0 20px;
+	}
+	.owl-nav {
+		bottom: 0px;
+	}
+}
+	
+@media only screen and (max-width: 414px) {
+	.comn_form_home .comn_title_h2 {
+		font-size: 22px;
+	}
+	.comon_title_sec {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.item .content_era h4 {
+		display: none;
+	}
+	.owl-item .item .content_era {
+		top: 30%;
+		left: 10%;
+		padding: 10px 10px;
+	}
+	.arow_img {
+		width: 15%;
+		right: 45%;
+	}
+	.arow_img.two {
+		right: 40%;
+	}
+	.content4 h3 {
+		font: 900 29px/40px Raleway,sans-serif;
+		text-align: center;
+	}
+	.enquiry_form {
+		padding: 0 0px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

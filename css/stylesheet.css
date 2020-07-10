@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium_italic';
+    src: url('../fonts/poppins/poppins-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsitalic';
+    src: url('../fonts/poppins/poppins-italic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinslight_italic';
+    src: url('../fonts/poppins/poppins-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold_italic';
+    src: url('../fonts/poppins/poppins-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/poppins/poppins-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgb(51, 51, 51);
+  font-family: 'poppinsregular', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+html body p {
+color: #333;
+line-height: 1.5;
+}
+html body a {
+color: #333;
+cursor: pointer;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color: unset;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0
+}
+
+/*top header starts*/
+.top_header {
+  padding: 10px 0;
+  background: #3e566a;
+  color: #fff;
+  float: left;
+  width: 100%;
+}
+.img_apps img {
+  width: 93px;
+  display: inline-block;
+}
+.img_apps span {
+  margin-right: 20px;
+}
+.cal_email a {
+  margin: 0px 20px;
+  padding-top: 50px;
+  position: relative;
+  top: 4px;
+  color: #fff;
+}
+.deals_img img {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 7px 6px #ddd;
+}
+.img_apps i {
+  padding: 0 10px;
+}
+/*top header ends*/
+
+/*header starts*/
+.header_main.index {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px -1px #ddd;
+  padding: 10px 0;
+  z-index: 99;
+  float: left;
+  width: 100%;
+}
+.header_main.index .navbar {
+  min-height: 0;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  width: 160px;
+  padding: 0;
+  height: unset;
+}
+.navbar-right li {
+  margin: 0 0 0 20px;
+}
+.navbar-right li a {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+.navbar-right li.active a {
+  color: #3e566a;
+  position: relative;
+}
+.navbar-right li a:hover {
+  background: transparent;
+}
+.nav.navbar-nav.navbar-right.navigation-ul {
+  margin-top: 7px;
+}
+/*header ends*/
+
+/*login starts*/
+.login_sec {
+  position: relative;
+  width: 100%;
+  float: left;
+  background: #ff4141;
+  border-bottom: 1px solid #919191;
+}
+/*.login_sec::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+  z-index: 2;
+}*/
+.wrap_logn_outer {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+  position: relative;
+  z-index: 3;
+}
+.input_catch {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  /*transform: skewX(-10deg);*/
+}
+.login_sec .label_catch {
+  color: #fff;
+}
+.social_log li {
+  display: inline-block;
+  padding-left: 50px;
+  font-size: 25px;
+  text-shadow: 1px 1px #000;
+  margin-top: 10px;
+}
+.social_log li a {
+  color: #fff
+}
+.social_log h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn.btn-catch {
+  background: #000;
+  width: 100%;
+  float: none;
+  height: 40px;
+  display: inline-block;
+  color: #fff;
+  box-shadow: 0 0 10px -3px #000;
+  /*background-image: linear-gradient(to right,#FF512F 0,#F09819 51%,#FF512F 100%);*/
+  /*transform: skewX(-10deg);*/
+  transition: all 5s ease 0s;
+  /*border-radius: 8px;*/
+  font-weight: bold;
+}
+/*login ends*/
+
+/*register sec starts*/
+.register_sec {
+  float: left;
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+  background-image: url('../img/demo-bg.png');
+  background-repeat: repeat;
+  /*background-size: cover;*/
+  height: 500px;
+}
+.register_sec::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 2;
+}
+.form_up_home {
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+.form_up_home label {
+  font-weight: lighter;
+  color: #9d9d9d;
+}
+/*register sec ends*/
+
+
+/*footer sec strats*/
+.footer_sec_light {
+    float: left;
+    width: 100%;
+    background-color: #353739;
+    padding: 50px 0 55px;
+}
+p.text-center.adrs {
+  color: #ffffff;
+  float: left;
+  font-size: 22px;
+  letter-spacing: 4.5px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.send-button {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.send-button a {
+  border: 2px solid #8cd143;
+  color: #fff;
+  font-size: 18px;
+  padding: 16px 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.6s ease 0s;
+  border-radius: 50px;
+  background: #8cd143 none repeat scroll 0 0;
+}
+.send-button a:hover {
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer_sec_light ul.icon {
+  padding: 30px 0;
+}
+.footer_sec_light .footer-social i.fa {
+  color: #687177;
+  font-size: 30px;
+  padding: 0 0px;
+}
+.footer_sec_light .footer-social i.fa:hover {
+    color: #8cd143;
+}
+.footer_sec {
+  background: #3e566a;
+  float: left;
+  padding: 25px 0 0;
+  width: 100%;
+}
+.text-center.footer-center {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.footer-social li {
+    display: inline-block;
+    padding-right: 15px;
+    width: auto;
+}
+.footer-social ul li a {
+    display: inline-block;
+    padding-right: 15px;
+    width: auto;
+    color: #ffffff;
+}
+.footer-social ul li a i {
+  height: 35px;
+  width: 35px;
+}
+.footer-social ul li a:hover {
+    color: #1d82ad;
+    text-decoration: none;
+}
+.fa-facebook:hover {
+    color: #007BA2;
+    transition: all 0.4s ease 0.2s;
+}
+.fa-twitter:hover {
+    color: #007BA2;
+    transition: all 0.4s ease 0.2s;
+}
+.fa-linkedin:hover {
+    color: #007BA2;
+    transition: all 0.4s ease 0.2s;
+}
+.fa-google-plus:hover {
+    color: #007BA2;
+    transition: all 0.4s ease 0.2s;
+}
+.fa-youtube:hover {
+    color: #007BA2;
+    transition: all 0.4s ease 0.2s;
+}
+.footer-about {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.footer-about p {
+    color: #687177;
+    margin-top:15px;
+}
+.adrs_numbs span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.footer_sec_light .footer-social .adrs_numbs i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #8cd143;
+}
+/*footer sec ends*/
+
+/*custom radio and check starts*/
+.custom_label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 12px 0;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 500;
+  font-style: italic;
+}
+.custom_label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #d1caca;
+    margin: 0;
+}
+.checkmark.radio {
+  border-radius: 50%;
+}
+.custom_label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.custom_label input:checked ~ .checkmark {
+    background-color: #8cd143;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.custom_label input:checked ~ .checkmark:after {
+    display: block;
+}
+.custom_label .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: white;
+}
+.custom_label .checkmark.radio:after {
+    border-radius: 50%;
+}
+/*custom radio and check ends*/

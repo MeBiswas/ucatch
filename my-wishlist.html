@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> YouCatch - My Wishlist </title>
+        <!-- css should be here -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/croppie.css">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+        <style>
+        	.wrap_product_inner{
+        		width: 100%;
+				float: left;
+				margin-top: 15px;
+        	}
+        	.shrt_btns ul a .fa-heart{
+        		color: #ff4141;
+        	}
+        	.side-list{
+        		list-style-type: none;
+        	}
+        	.side-list li{
+        		cursor: pointer;
+				border-bottom: 1px solid #f5f0f0;
+				padding: 8px 10px;
+        	}
+        	.side-list li:hover{
+        		color:#ff4141;
+        	}
+        	.navbar-right .dropdown-menu{
+        		margin-top: 15px;
+				margin-right: -18px;
+				width: 170px;
+        	}
+        	.navbar-right.rgt-nav li.right_comn{
+        		margin-top: 15px;
+        	}
+        	.dropdown-menu.dropdown_msg::before{
+				top: -15px;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+				border-bottom: 15px solid #fff;
+				content: '';
+				position: absolute;
+				right: 24px;
+        	}
+        	.right_comn .dropdown a{
+        		border: 1px solid #eee;
+				padding: 10px;
+				border-radius: 4px;
+        	}
+        	
+        </style>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        	<!-- header starts -->
+        	<header class="header_uper">
+        		<div class="transparent header-main">
+			        <nav class="navbar navbar-default custom-header">
+			            <div class="container">
+			                <!-- Brand and toggle get grouped for better mobile display -->
+			                <div class="navbar-header">
+			                    <div class="brand-name">
+			                        <a class="navbar-brand brand-navbar" id="whitelogo"><img src="img/logo.png" class="img-responsive" /></a>
+			                    </div>
+			                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+			                    </button>
+			                </div>
+			                <div class="collapse navbar-collapse">
+			                    <ul class="nav navbar-nav navbar-left singal">
+			                        <li><a href="javascript:;">Products</a></li>
+			                        <li><a href="javascript:;">Services</a></li>
+			                    </ul>
+			                    <ul class="nav navbar-nav navbar-right rgt-nav">
+			                    	<li class="srchhrd comn">
+			                            <a href="javascript:void(0);" class="" >
+			                            	<input type="text" class="form-control hedr_srch" placeholder="Search Here . . .">
+			                            	<!-- <i class="fa fa-search"></i> -->
+			                            </a>
+			                        </li>
+			                        <li class="left comn">
+			                            <a href="javascript:void(0);" class="trans-btn " ><i class="fa fa-bell"></i> </a>
+			                        </li>
+			                        <li class="right_comn">
+			                        	<div class="dropdown">
+				                            <a href="javascript:void(0);" class="trans-btn dropdown-toggle" type="button" data-toggle="dropdown">
+				                            	<img src="img/user.jpg" class="img-responsive" />
+				                            	<span>John Spiegal</span> <i class="fa fa-caret-down"></i>
+				                            </a>
+				                            <ul class="dropdown-menu dropdown_msg">
+												<li>
+													<ul class="side-list">
+														<li>My Profile</li>
+														<li>My Wishlist</li>
+														<li>Sign Out <i class="fa fa-power-off"></i></li>
+													</ul>
+												</li>
+											</ul>
+				                        </div>
+			                        </li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+			    </div>
+			    <div class="niche_header header-main">
+			        <nav class="navbar navbar-default custom-header">
+			            <div class="container">
+			                <!-- Brand and toggle get grouped for better mobile display -->
+			                <div class="navbar-header">
+			                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+			                    </button>
+			                </div>
+			                <div class="collapse navbar-collapse text-center ">
+			                    <ul class="nav navbar-nav singal">
+			                        <li class="active"><a href="javascript:;">Social</a></li>
+			                        <li><a href="javascript:;">Market Place</a></li>
+			                        <li><a href="javascript:;">Demand Services</a></li>
+			                        <li><a href="javascript:;">FAQ</a></li>
+			                        <li><a href="javascript:;">Help</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+			    </div>
+			</header>
+        	<!-- header ends -->
+
+            <div class="home_page_wrapper">
+            	<!-- div cover -->
+            	<div class="profile_cover" style="background-image:url('img/bm.jpg')">
+            		<div class="wrap_abs">
+                        <div class="col-md-2 col-md-offset-1 col-xs-12">
+                            <div class="img_prof">
+                                <img src="img/user.jpg" class="img-responsive" id="upldd-img" />
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="usr_top_dtls">
+                                <div class="col-sm-7">
+                                    <h4 class="name">John Spiegal</h4>
+                                    <p class="adrs">21, paris, France</p>
+                                </div>
+                                <div class="prof_btn col-sm-5">
+	                                <ul>
+	                                    <li class=""><i class="fa fa-thumbs-up"></i> 20 Likes</li>
+	                                    <li class=""><i class="fa fa-commenting"></i> 469 Views</li>
+	                                    <li class=""><i class="fa fa-feed"></i> My Posts</li>
+	                                </ul>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+            	</div>
+            	<!-- div cover -->
+            	<!-- section post start -->
+				<section class="social_page user_db_catch">
+					<div class="container">
+						<div class="row pos_rel">
+							<div class="col-sm-3 pos_sticky">
+								<div class="card widget_one">
+									<ul class="social_side_opt">
+										<li><a href="personal-info.html"> Personal Info </a></li>
+										<li><a href="my-profile.html"> Profile Photos </a></li>
+										<li><a href="email-setting.html"> Email Setting </a></li>
+										<li class="active has_sub_menu"><a href="javascript:;"> Create/Manage E-shop <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+											<ul class="am_sub_menu" type="none">
+												<li>
+													<a href="dashboard-create-eshop.html"> Create your E-shop</a>
+												</li>
+												<li>
+													<a href="dashboard-upload-products.html"> Add Products</a>
+												</li>
+												<li>
+													<a href="dashboard-uploaded-products.html"> Uploaded Products</a>
+												</li>
+												<li class="active">
+													<a href="dashboard-uploaded-products.html"> My Wishlist </a>
+												</li>
+											</ul>
+										</li>
+										<li class="has_sub_menu"><a href="javascript:;"> My Services <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+											<ul class="am_sub_menu" type="none">
+												<li>
+													<a href="dashboard-upload-services.html"> Upload Service</a>
+												</li>
+												<li>
+													<a href="dashboard-manage-services-account.html"> Manage Service Profile</a>
+												</li>
+												<li>
+													<a href="dashboard-services-status.html"> Services Status </a>
+												</li>
+												<li>
+													<a href="dashboard-recieved-service-request.html"> Received Service Requests</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="dashboard-notifications.html"> Notifications </a></li>
+										<li><a href="change-password.html"> Change Password </a></li>
+										<li><a href="index.html"> Log Out </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-9 mid_sec">
+								<div class="logged_db manage_eShop">
+									<div class="single_post">
+										<h3 class="logged_sec_head"> My Wishlist </h3>
+										<div class="col-sm-12">
+											<div class="comon_wrap_logged wrap_eShops my-wishlist">
+												<div class="wrap_product_inner">
+													<div class="col-sm-4 col-xs-6">
+														<div class="product_inner">
+															<div class="eshop_prod">
+																<div class="eshop_pro_img prod_1 pos_rel">
+																	<a href="product-detail-marketplace.html"> <img src="img/pro1.jpg" class="img-responsive"></a>
+																	<div class="shrt_btns">
+																		<ul type="none" class="pos_abs_ul">
+																			<li><a href="javascript:;" title="View Detail" data-toggle="tooltip" data-placement="left"> <i class="fa fa-eye"></i> </a></li>
+																			<li><a href="javascript:;" title="Remove Wishlist" data-toggle="tooltip" data-placement="left"> <i class="fa fa-heart"></i> </a></li>
+																			<li><a href="javascript:;" title="Add to Cart" data-toggle="tooltip" data-placement="left"> <i class="fa fa-shopping-cart"></i> </a></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="desc_shop">
+																	<div class="name_shope">
+																		<a class="ttl_prod" href="product-detail-marketplace.html">Air Jordan Shoe</a>
+																		<p class="soc_shop_loc"><i class="fa fa-shopping-cart"></i> Shop Name </p>
+																		<p class="soc_shop_nam">$ 12.50</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-xs-6">
+														<div class="product_inner">
+															<div class="eshop_prod">
+																<div class="eshop_pro_img prod_1 pos_rel">
+																	<a href="product-detail-marketplace.html"> <img src="img/pro2.jpg" class="img-responsive"></a>
+																	<div class="shrt_btns">
+																		<ul type="none" class="pos_abs_ul">
+																			<li><a href="javascript:;" title="View Detail" data-toggle="tooltip" data-placement="left"> <i class="fa fa-eye"></i> </a></li>
+																			<li><a href="javascript:;" title="Remove Wishlist" data-toggle="tooltip" data-placement="left"> <i class="fa fa-heart"></i> </a></li>
+																			<li><a href="javascript:;" title="Add to Cart" data-toggle="tooltip" data-placement="left"> <i class="fa fa-shopping-cart"></i> </a></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="desc_shop">
+																	<div class="name_shope">
+																		<a class="ttl_prod" href="product-detail-marketplace.html">Air Jordan Shoe</a>
+																		<p class="soc_shop_loc"><i class="fa fa-shopping-cart"></i> Shop Name </p>
+																		<p class="soc_shop_nam">$ 12.50</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-4 col-xs-6">
+														<div class="product_inner">
+															<div class="eshop_prod">
+																<div class="eshop_pro_img prod_1 pos_rel">
+																	<a href="product-detail-marketplace.html"> <img src="img/pro1.jpg" class="img-responsive"></a>
+																	<div class="shrt_btns">
+																		<ul type="none" class="pos_abs_ul">
+																			<li><a href="javascript:;" title="View Detail" data-toggle="tooltip" data-placement="left"> <i class="fa fa-eye"></i> </a></li>
+																			<li><a href="javascript:;" title="Remove Wishlist" data-toggle="tooltip" data-placement="left"> <i class="fa fa-heart"></i> </a></li>
+																			<li><a href="javascript:;" title="Add to Cart" data-toggle="tooltip" data-placement="left"> <i class="fa fa-shopping-cart"></i> </a></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="desc_shop">
+																	<div class="name_shope">
+																		<a class="ttl_prod" href="product-detail-marketplace.html">Air Jordan Shoe</a>
+																		<p class="soc_shop_loc"><i class="fa fa-shopping-cart"></i> Shop Name </p>
+																		<p class="soc_shop_nam">$ 12.50</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section post start -->	
+				
+				<!-- section footer db start -->	
+				<section class="db_footer_sec">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<ul class="copy_rt" type="none">
+									<li><img src="img/u.png" class="img-responsive"></li>
+									<li> &copy Copyright 2018 by YouCatch. All Rights Reserved.</li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul class="ftr_links" type="none">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy Policy</a></li>
+									<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section footer db ends -->	
+
+            </div>
+        </div>
+        <!-- <a class="scrollTop" href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+        <!-- js should be here -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+        <script type="text/javascript"  src="js/aos.js"></script>
+
+        <script type="text/javascript"  src="js/croppie.js"></script>
+        <script type="text/javascript"  src="js/prof-demo.js"></script>
+        <script type="text/javascript"  src="js/exif.js"></script>
+
+        <!-- croppie top -->
+        <script>
+            Demo1.init();
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.crop-uploader1').hide();
+                $(document).on('change','.file-btn1',function(){
+                    $('.crop-uploader1').fadeIn();
+                });
+            })
+        </script>
+        <script >
+            $(".upload-result1").click(function(e){
+                e.preventDefault();
+                $(".upload-hideme1").slideUp();
+            });
+        </script>
+        <!-- croppie top -->
+
+
+		<script type="text/javascript">
+			$('.am_sub_menu').slideUp();
+			$('.has_sub_menu').click(function(){
+				$(this).find('.am_sub_menu').slideToggle();
+			});
+		</script>
+
+        <!-- <script type="text/javascript">
+	      	$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 100) {
+			       $('.header_uper').addClass('fixed-header');
+			    }
+			    else {
+			       $('.header_uper').removeClass('fixed-header');
+			    }
+			});
+	    </script> -->
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip();
+			});
+
+			AOS.init();
+		</script>
+    </body>
+</html>
+

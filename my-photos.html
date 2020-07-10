@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> YouCatch - Personal Information </title>
+        <!-- css should be here -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive-style.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <style>
+        	.wrap_personal_pik form{
+        		margin-top: 10px;
+        	}
+        	.wrap_personal_pik .my-imgs{
+        		margin-top: 15px;
+        	}
+        	.my-imgs .prticulr-img{
+        		box-shadow: 0px 0px 5px gray;
+				height: 200px;
+				width: 200px;
+				margin-left: 10px;
+				padding: 0;
+				transition: all 0.5s;
+				position: relative;
+				overflow: hidden;
+				margin-bottom: 10px;
+        	}
+        	.my-imgs .prticulr-img a img{
+        		object-fit: cover;
+				height: 200px;
+				width: 100%;
+			}
+			.prticulr-img figure figcaption {
+			  height: 100%;
+			  left: 0;
+			  position: absolute;
+			  top: 0;
+			  width: 100%;
+			  backface-visibility: hidden;
+			  color: #fff;
+			  font-size: 1.25em;
+			  text-transform: uppercase;
+			}
+
+			 .prticulr-img figure h4{
+			  margin: 0;
+			  color: #fff;
+			  font-size: 20px;
+			  font-weight: 800;
+			  word-spacing: -0.15em;
+			}
+
+			.prticulr-img figure.softeffect {
+			  background: none repeat scroll 0 0 #000000;
+			}
+
+			.prticulr-img figure.softeffect img {
+			  transition: opacity .35s ease 0s, transform .35s ease 0s;
+			}
+
+			.prticulr-img figure.softeffect figcaption:before {
+			  opacity: 0;
+			  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+			}
+
+			 .prticulr-img figure.softeffect h4 {
+			  opacity: 0;
+			  padding: 20% 0 20px;
+			  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+			  text-align: center;
+			   margin-top: 43px;
+			}
+			 .prticulr-img figure.softeffect:hover h4 {
+			  opacity: 1;
+			  transform: scale(1);
+			  text-align: center;
+			  margin-top: 43px;
+			}
+
+			 .prticulr-img figure img {
+			  display: block;
+			  max-width: 100%;
+			  min-height: 100%;
+			  opacity: 1;
+			  position: relative;
+			}
+
+			.prticulr-img figure.softeffect {
+			  background: none repeat scroll 0 0 transparent;
+			}
+
+			.prticulr-img figure.softeffect:hover {
+			  background: none repeat scroll 0 0 #000000;
+			  /* Cyan: #00aeef */
+			}
+
+			.prticulr-img figure.softeffect img {
+			  transform: scale(1);
+			  transition: opacity .35s ease 0s, transform .35s ease 0s;
+			}
+
+			.prticulr-img figure.softeffect:hover img {
+			  opacity: 0.40;
+			  transform: scale(1.15);
+			  filter: blur(2px);
+			}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+        	<!-- header starts -->
+        	<header class="header_uper">
+        		<div class="transparent header-main">
+			        <nav class="navbar navbar-default custom-header">
+			            <div class="container">
+			                <!-- Brand and toggle get grouped for better mobile display -->
+			                <div class="navbar-header">
+			                    <div class="brand-name">
+			                        <a class="navbar-brand brand-navbar" id="whitelogo"><img src="img/logo.png" class="img-responsive" /></a>
+			                    </div>
+			                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+			                    </button>
+			                </div>
+			                <div class="collapse navbar-collapse">
+			                    <ul class="nav navbar-nav navbar-left singal">
+			                        <li><a href="javascript:;">Products</a></li>
+			                        <li><a href="javascript:;">Services</a></li>
+			                    </ul>
+			                    <ul class="nav navbar-nav navbar-right rgt-nav">
+			                    	<li class="srchhrd comn">
+			                            <a href="javascript:void(0);" class="" >
+			                            	<input type="text" class="form-control hedr_srch" placeholder="Search Here . . .">
+			                            	<!-- <i class="fa fa-search"></i> -->
+			                            </a>
+			                        </li>
+			                        <li class="left comn">
+			                            <a href="javascript:void(0);" class="trans-btn " ><i class="fa fa-bell"></i> </a>
+			                        </li>
+			                        <li class="right comn">
+			                            <a href="javascript:void(0);" class="trans-btn">
+			                            	<img src="img/user.jpg" class="img-responsive" />
+			                            	John Spiegal
+			                            </a>
+			                        </li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+			    </div>
+			    <div class="niche_header header-main">
+			        <nav class="navbar navbar-default custom-header">
+			            <div class="container">
+			                <!-- Brand and toggle get grouped for better mobile display -->
+			                <div class="navbar-header">
+			                    <button type="button" class="navbar-toggle mob-nv-clpse" onclick="openNav()">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+			                    </button>
+			                </div>
+			                <div class="collapse navbar-collapse text-center ">
+			                    <ul class="nav navbar-nav singal">
+			                        <li class="active"><a href="javascript:;">Social</a></li>
+			                        <li><a href="javascript:;">Market Place</a></li>
+			                        <li><a href="javascript:;">Demand Services</a></li>
+			                        <li><a href="javascript:;">FAQ</a></li>
+			                        <li><a href="javascript:;">Help</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </nav>
+			    </div>
+			</header>
+        	<!-- header ends -->
+
+            <div class="home_page_wrapper">
+            	<!-- div cover -->
+            	<div class="profile_cover" style="background-image:url('img/bm.jpg')">
+            		<div class="wrap_abs">
+                        <div class="col-md-2 col-md-offset-1 col-xs-12">
+                            <div class="img_prof">
+                                <img src="img/user.jpg" class="img-responsive" id="upldd-img" />
+                            </div>
+                        </div>
+                        3<div class="col-md-8 col-xs-12">
+                            <div class="usr_top_dtls">
+                                <div class="col-sm-7">
+                                    <h4 class="name">John Spiegal</h4>
+                                    <p class="adrs">21, paris, France</p>
+                                </div>
+                                <div class="prof_btn col-sm-5">
+	                                <ul>
+	                                    <li class=""><i class="fa fa-thumbs-up"></i> 20 Likes</li>
+	                                    <li class=""><i class="fa fa-commenting"></i> 469 Comments</li>
+	                                    <li class=""><i class="fa fa-feed"></i> My Posts</li>
+	                                </ul>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+            	</div>
+            	<!-- div cover -->
+            	<!-- section post start -->
+				<section class="social_page user_db_catch">
+					<div class="container">
+						<div class="row pos_rel">
+							<div class="col-sm-3 pos_sticky">
+								<div class="card widget_one">
+									<ul class="social_side_opt">
+										<li class="active"><a href="personal-info.html"> Personal Info </a></li>
+										<li><a href="my-profile.html"> Profile Photos </a></li>
+										<li><a href="my-photos.html"> My Photos </a></li>
+										<li><a href="my-videos.html"> My Videos </a></li>
+										<li><a href="email-setting.html"> Email Setting </a></li>
+										<li><a href="dashboard-notifications.html"> Notifications </a></li>
+										<li><a href="change-password.html"> Change Password </a></li>
+										<li><a href="index.html"> Log Out </a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-9 mid_sec">
+								<div class="logged_db personal_pik">
+									<div class="single_post">
+										<h3 class="logged_sec_head"> My Photos </h3>
+										<div class="col-sm-12">
+											<div class="comon_wrap_logged wrap_personal_pik">
+												<div class="col-sm-12">
+													<!-- <div class="row">
+														<form class="form-horizontal">
+															<div class="col-sm-8"> 
+																<div class="form-group">
+																	<input id="" type="text" class="form-control" name="">
+																</div>
+															</div>
+															<div class="col-sm-4">
+																<button type="submit" class="btn btn-default">Search <i class="fa fa-search"></i></button>
+															</div>
+														</form>
+													</div> -->
+													<div class="row my-imgs">
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/neymar.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/neymar.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/jeni.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/jeni.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/user.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/user.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/last.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/last.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/user.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/user.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/jeni.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/jeni.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+														<div class="col-sm-3 prticulr-img image-wrap">
+															<a href="img/last.jpg" data-fancybox="gallery">
+																<figure class="softeffect">
+																	<img src="img/last.jpg" alt="" />
+																	<figcaption>
+            															<h4><i class="fa fa-search-plus"></i></h4>
+            														</figcaption>
+																</figure>
+															</a>
+														</div>
+
+													</div>								  
+													<!-- <div class="pro_pik view_side">
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Full Name</label>
+																	<input type="text" class="input_catch" name="" value="John Spiegal" disabled="">
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Date of Birth</label>
+																	<input type="text" class="input_catch" name="" value="07/05/1993" disabled="">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Email Address</label>
+																	<input type="text" class="input_catch" name="" value="john_spiegal@gmail.com" disabled="">
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Mobile Number</label>
+																	<input type="text" class="input_catch" name="" value="+91 9478616633" disabled="">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">I am a</label>
+																	<input type="text" class="input_catch" name="" value="Male" disabled="">
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Country</label>
+																	<input type="text" class="input_catch" name="" value="India" disabled="">
+																</div>
+															</div>
+														</div>
+														<div class="form-group text-left">
+															<button class="btn btn_catch edit_info_btn"> Edit Profile</button>
+														</div>
+													</div>
+													<div class="pro_pik edit_side">
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Full Name</label>
+																	<input type="text" class="input_catch" name="" placeholder="John Spiegal">
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Date of Birth</label>
+																	<input type="text" class="input_catch dob_dash" name="" placeholder="07/05/1993">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Email Address</label>
+																	<input type="text" class="input_catch" name="" placeholder="john_spiegal@gmail.com">
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Mobile Number</label>
+																	<input type="text" class="input_catch" name="" placeholder="+91 9478616633">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">I am a</label>
+																	<div class="select_catch pos_rel">
+																		<select class="form-control">
+																			<option>Select Gender</option>
+																			<option value="m">Male</option>
+																			<option value="f">Female</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="head_label">Country</label>
+																	<input type="text" class="input_catch" name="" placeholder="India">
+																</div>
+															</div>
+														</div>
+														<div class="form-group text-left">
+															<button class="btn btn_catch save_chng"> Save Changes</button>
+														</div>
+													</div> -->
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="single_post">
+										<h3 class="logged_sec_head">About Me <span class="pull-right edit_info_btn"> <i class="fa fa-edit"></i> Edit</span> </h3>
+										<div class="col-sm-12">
+											<div class="comon_wrap_logged wrap_personal">
+												<div class="col-sm-12">
+
+													<div class="pro_pik view_side">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group">
+																	<label class="head_label">About Me</label>
+																	<textarea class="text_catch form-control" rows="4" disabled="" placeholder="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English." ></textarea>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="pro_pik edit_side">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group">
+																	<label class="head_label">About Me</label>
+																	<textarea class="text_catch form-control" rows="4"></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="form-group text-left">
+															<button class="btn btn_catch save_chng"> Save Changes</button>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section post start -->	
+
+				<!-- section footer db start -->	
+				<section class="db_footer_sec">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<ul class="copy_rt" type="none">
+									<li><img src="img/u.png" class="img-responsive"></li>
+									<li> &copy Copyright 2018 by YouCatch. All Rights Reserved.</li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul class="ftr_links" type="none">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="privacy.html">Privacy Policy</a></li>
+									<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- section footer db ends -->	
+				
+            </div>
+        </div>
+        <!-- <a class="scrollTop" href="#" id="scroll-to-top"><i class="fa fa-arrow-up"></i></a> -->
+
+        <!-- js should be here -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> 
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <!-- <script type="text/javascript">
+	      	$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 100) {
+			       $('.header_uper').addClass('fixed-header');
+			    }
+			    else {
+			       $('.header_uper').removeClass('fixed-header');
+			    }
+			});
+	    </script> -->
+	    <script>
+	        $(document).ready(function() {
+			  $("a.fancybox").fancybox({
+			  	thumbs : {
+		autoStart : true
+	}
+			  })
+			});
+		</script>
+	    <script type="text/javascript">
+	    	$('.dob_dash').datepicker({
+	    		"setDate": new Date(),
+	    		// "autoclose": true
+	    	});
+	    </script>
+	    <script type="text/javascript">
+	    	$('.edit_side').hide();
+	    	$(document).ready(function(){
+	    		$('.edit_info_btn').click(function(){
+	    			$(this).closest('.single_post').find('.view_side').slideUp();
+	    			$(this).closest('.single_post').find('.edit_side').fadeIn();
+	    		});
+	    		$('.save_chng').click(function(){
+	    			$(this).closest('.single_post').find('.edit_side').slideUp();
+	    			$(this).closest('.single_post').find('.view_side').fadeIn();
+	    		});
+	    	});
+	    </script>
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip();
+			});
+
+			AOS.init();
+		</script>
+    </body>
+</html>
+
